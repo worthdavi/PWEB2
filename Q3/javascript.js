@@ -3,11 +3,11 @@
     if((number < 0)||(number == 0)){
         alert("O valor tem que ser positivo e diferente de zero.")
     }else{
-        let ret = ""
+        let ret = []
         let i = 0
         while(i <= number){
             if(i % 2 != 0){
-                ret = ret + i + ", "
+                ret.push(i)
             }
             i++
         }
