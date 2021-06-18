@@ -7,7 +7,7 @@
         let j = parseInt(prompt("Insira o número para j:"))
         let multiples = []
         let index = 0
-        for(let n = 1; n <= number; n++){
+        for(let n = 0; n <= number; n++){
             if((n % i == 0)||(n % j == 0)){
                 if(n <= multiples[index]){
                     multiples.unshift(n) // colocando no início pra não ter que ordenar o array, achei melhor
