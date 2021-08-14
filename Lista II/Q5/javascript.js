@@ -1,20 +1,24 @@
 const getImpares = (m) => {
     var i, k, soma;
     var result = Math.pow(m, 3)
-    var numbers = []
-    for (k = 1; soma != result; k += 2) {
+    for (n = 1; n <= m; n++) {
         soma = 0;
-        for (i = 0; i < m; i++){
-            soma = soma + k + 2 * i;
-        }      
+        numbers = []
+        for (k = 1; soma != n*n*n; k += 2) {
+            soma = 0;
+            numbers = []
+            for (i = 0; i < n; i++){
+                soma = soma + k + 2 * i;
+            }      
+        }
+        k = k - 2;
+        for (i = 0; i < n; i++){
+            numbers.push(k+2*i)
+        }
+        let string = `Resultado:\n${n}³ = ${numbers} = ${n*n*n} (:`
+        string = string.replace(/,/g, ' + ')
+        console.log(string)
     }
-    k = k - 2;
-    for (i = 0; i < m; i++){
-        numbers.push(k+2*i)
-    }
-    let string = `Resultado:\n${m}³ = ${numbers}`
-    string = string.replace(/,/g, ' + ')
-    alert(string) 
 }
 
 {
