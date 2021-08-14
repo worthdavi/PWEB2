@@ -1,0 +1,1 @@
+4. Dados n números inteiros positivos, calcular a soma dos que são primos.
